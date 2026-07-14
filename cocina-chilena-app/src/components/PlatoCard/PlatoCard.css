@@ -1,0 +1,161 @@
+.plato-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plato-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.plato-card.no-disponible {
+  opacity: 0.7;
+}
+
+.plato-imagen {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.plato-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plato-estado {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.estado-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.estado-badge.disponible {
+  background-color: #28a745;
+}
+
+.estado-badge.agotado {
+  background-color: #dc3545;
+}
+
+.plato-info {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.plato-info h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin: 0;
+  min-height: 3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.plato-precio {
+  margin: 0.25rem 0;
+}
+
+.precio {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #c51162;
+  margin: 0;
+}
+
+.editar-precio {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-precio {
+  width: 100px;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.editar-precio span {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.plato-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.plato-acciones button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  flex: 1;
+  min-width: 60px;
+}
+
+.btn-editar {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #0056b3;
+}
+
+.btn-toggle {
+  color: white;
+}
+
+.btn-disponible {
+  background-color: #28a745;
+}
+
+.btn-disponible:hover {
+  background-color: #218838;
+}
+
+.btn-agotado {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-agotado:hover {
+  background-color: #e0a800;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-eliminar:hover {
+  background-color: #c82333;
+}
